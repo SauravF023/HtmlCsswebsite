@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ticfortech - Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+        }
+        .navbar a:active {
+            background-color: #aaa;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form select {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="images/logo.png" alt="ticfortech" style="height: 20px;"></a>
+        <div>
+            <a href="TicforTech(homepage).html">SITENAME</a>
+            <a href="ContactPage.html" class="contact-link">CONTACT</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <p>We value our readers' feedback and engagement.
+            On our "Contact Us" page, you can easily reach out to us with your queries,
+      suggestions, or requests. Our user-friendly contact form allows you to submit your name,
+       email, and favorite tech genre, ensuring we cater to your specific interests. Additionally,
+        you can subscribe to our newsletter to receive regular updates directly in your inbox.We're
+         here to build a community of tech enthusiasts and foster meaningful conversations around technology.</p>
+         <h4><b>Form</b></h4>
+        <form action="/submit_form" method="POST">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email">
+            <label for="genre">FAVOURITE GENRE</label>
+            <input list="genres" id="genre" name="genre">
+            <datalist id="genres">
+                <option value="Technology">
+                <option value="Science">
+                <option value="Engineering">
+                <option value="Mathematics">
+            </datalist>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL</label>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        ALL RIGHTS RESERVED,2024
+    </div>
+</body>
+</html>
